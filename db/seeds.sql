@@ -1,6 +1,6 @@
-USE burgers_db;
+USE burger_db;
 
-INSERT INTO burgers (burger_name)
+INSERT INTO burger (burger_name)
 VALUES 
     ("Bacon and Egg Breakfast Burger"),
     ("Impossible Burger"),
