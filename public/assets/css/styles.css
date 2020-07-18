@@ -1,0 +1,58 @@
+body{
+    background: url(../images/X-All-The-Y.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    object-fit: cover;
+    background-size: 100% 100%;
+}
+
+.card-body{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10;
+    color: black;
+}
+
+h5{
+    text-align: center;
+}
+
+input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    width: 550px;
+    height: 80px;
+    font-size: large;
+}
+
+.devour-btn{
+    margin: 10px;
+}
+
+.submit-btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 60px;
+}
+
+p{
+    text-align: center;
+    color: white;
+}
+
+ol{
+    text-align: center;
+    list-style: none;
+}
+
+li{
+    text-align: center;
+}

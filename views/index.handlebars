@@ -1,0 +1,41 @@
+<h1>Eat All Da Burgers!</h1>
+
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Burgers to Devour:</h5>
+                <ol class="to-devour" id="to-devour">
+                    {{#each burgers}}
+                    {{#unless devoured}}
+                    <li>{{ burger_name }}<button class="devour-btn btn-primary" data-id="{{this.id}}"
+                            data-nowdevoured="true">Devour</button></li>
+                    {{/unless}}
+                    {{/each}}
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Devoured Burgers:</h5>
+                <ol class="devoured" id="to-devour">
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    <li>{{ burger_name }}</li>
+                    {{/if}}
+                    {{/each}}
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<form class="create-form">
+    <div class="form-group">
+        <input type="text" id="new-burger" name="burger" placeholder="What Burger Would You Like to Save to Eat?">
+    </div>
+    <br>
+    <button id="submit-btn" class="submit-btn btn-primary" type="submit">Save to Devour</button>
+</form>
